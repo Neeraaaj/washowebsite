@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+/* .container {
+  padding: 0 2rem;
+} */
+
+@font-face {
+  font-family: 'Camar';
+  src: url(../public/fonts/Camar.otf);
+}
+
+@font-face {
+  font-family: 'Bedug';
+  src: url(../public/fonts/Bedug.otf);
+}
+.title{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+  min-height: 10vh; 
+  padding: 4rem 0; 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-image: linear-gradient(to bottom, #0066ff, #0090ff, #00b0ff, #00cbfc, #12e2eb); 
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1743%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1744)'%3e%3c/rect%3e%3cpath d='M 0%2c77 C 96%2c107.4 288%2c242.4 480%2c229 C 672%2c215.6 768%2c25 960%2c10 C 1152%2c-5 1344%2c125.2 1440%2c154L1440 560L0 560z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c406 C 144%2c426.8 432%2c520.2 720%2c510 C 1008%2c499.8 1296%2c386 1440%2c355L1440 560L0 560z' fill='%232264ab'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1743'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='84.72%25' y1='139.29%25' x2='15.28%25' y2='-39.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1744'%3e%3cstop stop-color='rgba(14%2c 42%2c 71%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 111%2c 255%2c 1)' offset='0.69'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"); */
+  background-size: cover;
+  /* background-image: linear-gradient(to top, #0064ff, #0092ff, #00b5ff, #00d2fe, #12ebeb);
+  width: 100vw; */
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 5rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  opacity: 0;
+  left: 0;
+  animation: slide-in 1.2s ease-out forwards;
+}
+
+@keyframes slide-in {
+  20%{
+    opacity: 0;
+  }
+  
+  100%{
+    opacity: 1;
+    margin-top: 1vh;
+  }
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+}
+
+@media (prefers-color-scheme: light) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+.bg{
+  width: 100%;
+  
+}
+
+.main h1{
+  animation: animate 4s ease-in-out infinite;
+  font-family: 'Camar';
+}
+
+/* @keyframes animate {
+	0%,
+	100% {
+    color: #ffffff;
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+    color:#0070f3;
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+} */
+
+.section2{
+  animation: side-out 1.5s ease-in forwards;
+}
+
+@keyframes side-out {
+  20%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
