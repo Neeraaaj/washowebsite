@@ -296,15 +296,15 @@ export default function Home() {
                         <form onSubmit={handleSubmit(submitHandler)} autoComplete='off' id='form'>
                             <div className="form-group pb-3">    
                                 <input type="text" placeholder="Your Name" className="form-control" id="exampleName1" {...register('Name', {required: "Please fill in your name"})} />
-                                {errors.Name && errors.Name.message}   
+<!--                                 {errors.Name && errors.Name.message}    -->
                             </div>
                             <div className="form-group pb-3">    
                                 <input type="email" placeholder="Email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" {...register('Email',{required: "Please fill in your Email Id"} )}/>   
-                                {errors.Email && errors.Email.message}
+<!--                                 {errors.Email && errors.Email.message} -->
                             </div>
                             <div className="form-group pb-3">   
                                 <input type="tel" placeholder="Mobile no" className="form-control" id="exampleInputPassword1" pattern='[0-9]{4}[0-9]{2}[0-9]{4}' maxLength={10} {...register('Mobile', {required: "Please fill in your Mobile no"})}/>
-                                {errors.Mobile && errors.Mobile.message}
+<!--                                 {errors.Mobile && errors.Mobile.message} -->
                             </div>
                             <label style={{fontFamily: "Amarante", color:'white'}}><b>Service: </b></label>
                             <select style={{fontFamily: "Amarante", marginLeft: '20px'}} {...register('Service')}>
