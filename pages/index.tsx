@@ -10,7 +10,7 @@ import {useForm} from 'react-hook-form'
 export default function Home() {
   const {register, handleSubmit, reset,formState:{errors}} = useForm()
   
-  function submitHandler(data){
+  function submitHandler(data: any){
     console.log(data);
 
     fetch("./api/sheet", {
