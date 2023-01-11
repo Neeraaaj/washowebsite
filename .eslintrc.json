@@ -1,4 +1,6 @@
 {
   "extends": "next",
-  "rules": { "react/no-unescaped-entities": 0}
+  "rules": { 
+    "react/no-unescaped-entities": 0
+  }
 }
