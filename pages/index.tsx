@@ -294,18 +294,20 @@ export default function Home() {
                     <h3 className="pb-3" style={{ fontFamily: 'Amarante', textAlign:'center', fontWeight: 'bolder', color:'white'}}>BOOK YOUR APPOINTMENT</h3>
                     <div className="form-style">
                         <form onSubmit={handleSubmit(submitHandler)} autoComplete='off' id='form'>
-                            <div className="form-group pb-3">    
-                                <input type="text" placeholder="Your Name" className="form-control" id="exampleName1" {...register('Name', {required: "Please fill in your name"})} />
-<!--                                 {errors.Name && errors.Name.message}    -->
-                            </div>
-                            <div className="form-group pb-3">    
-                                <input type="email" placeholder="Email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" {...register('Email',{required: "Please fill in your Email Id"} )}/>   
-<!--                                 {errors.Email && errors.Email.message} -->
-                            </div>
-                            <div className="form-group pb-3">   
-                                <input type="tel" placeholder="Mobile no" className="form-control" id="exampleInputPassword1" pattern='[0-9]{4}[0-9]{2}[0-9]{4}' maxLength={10} {...register('Mobile', {required: "Please fill in your Mobile no"})}/>
-<!--                                 {errors.Mobile && errors.Mobile.message} -->
-                            </div>
+                            <>  
+                              <div className="form-group pb-3">
+                                  <input type="text" placeholder="Your Name" className="form-control" id="exampleName1" {...register('Name', {required: "Please fill in your name"})} />
+                                  {/* {errors.Name && errors.Name.message} */}
+                              </div>
+                              <div className="form-group pb-3">    
+                                  <input type="email" placeholder="Email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" {...register('Email',{required: "Please fill in your Email Id"} )}/>   
+                                  {/* {errors.Email && errors.Email.message} */}
+                              </div>
+                              <div className="form-group pb-3">   
+                                  <input type="tel" placeholder="Mobile no" className="form-control" id="exampleInputPassword1" pattern='[0-9]{4}[0-9]{2}[0-9]{4}' maxLength={10} {...register('Mobile', {required: "Please fill in your Mobile no"})}/>
+                                  {/* {errors.Mobile && errors.Mobile.message} */}
+                              </div>
+                            </>  
                             <label style={{fontFamily: "Amarante", color:'white'}}><b>Service: </b></label>
                             <select style={{fontFamily: "Amarante", marginLeft: '20px'}} {...register('Service')}>
                               <option value="deepcleaning" style={{fontFamily: "Amarante"}}>Deep Cleaning</option>
@@ -352,7 +354,7 @@ export default function Home() {
         <div className="footer">
           <h1 className="col-lg-12 text-larger" id="head" style={{color: "white",fontFamily: "Amarante", position: "absolute", marginTop: "15%", zIndex: "1"}}>WASHO</h1>
           <p className="p-3" style={{position: "absolute", marginTop: "22%", zIndex: "1", color: "white"}}>Copyright © 2023</p>
-          <svg id="wave" style={{ transform:"rotate(0deg)", transition: "0.3s", zIndex: "-1" }} viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stopColor="rgba(0, 73.603, 255, 1)" offset="0%"></stop><stop stop-color="rgba(0, 246.362, 255, 1)" offset="100%"></stop></linearGradient></defs><path style={{ transform:"translate(0, 0px)", opacity:"1", fill:"url(#sw-gradient-0)" }} d="M0,49L120,106.2C240,163,480,278,720,285.8C960,294,1200,196,1440,130.7C1680,65,1920,33,2160,40.8C2400,49,2640,98,2880,163.3C3120,229,3360,310,3600,294C3840,278,4080,163,4320,114.3C4560,65,4800,82,5040,89.8C5280,98,5520,98,5760,98C6000,98,6240,98,6480,130.7C6720,163,6960,229,7200,236.8C7440,245,7680,196,7920,163.3C8160,131,8400,114,8640,147C8880,180,9120,261,9360,245C9600,229,9840,114,10080,106.2C10320,98,10560,196,10800,228.7C11040,261,11280,229,11520,187.8C11760,147,12000,98,12240,81.7C12480,65,12720,82,12960,138.8C13200,196,13440,294,13680,294C13920,294,14160,196,14400,147C14640,98,14880,98,15120,138.8C15360,180,15600,261,15840,310.3C16080,359,16320,376,16560,383.8C16800,392,17040,392,17160,392L17280,392L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z"></path></svg>
+          <svg id="wave" style={{ transform:"rotate(0deg)", transition: "0.3s", zIndex: "-1" }} viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stopColor="rgba(0, 73.603, 255, 1)" offset="0%"></stop><stop stopColor="rgba(0, 246.362, 255, 1)" offset="100%"></stop></linearGradient></defs><path style={{ transform:"translate(0, 0px)", opacity:"1", fill:"url(#sw-gradient-0)" }} d="M0,49L120,106.2C240,163,480,278,720,285.8C960,294,1200,196,1440,130.7C1680,65,1920,33,2160,40.8C2400,49,2640,98,2880,163.3C3120,229,3360,310,3600,294C3840,278,4080,163,4320,114.3C4560,65,4800,82,5040,89.8C5280,98,5520,98,5760,98C6000,98,6240,98,6480,130.7C6720,163,6960,229,7200,236.8C7440,245,7680,196,7920,163.3C8160,131,8400,114,8640,147C8880,180,9120,261,9360,245C9600,229,9840,114,10080,106.2C10320,98,10560,196,10800,228.7C11040,261,11280,229,11520,187.8C11760,147,12000,98,12240,81.7C12480,65,12720,82,12960,138.8C13200,196,13440,294,13680,294C13920,294,14160,196,14400,147C14640,98,14880,98,15120,138.8C15360,180,15600,261,15840,310.3C16080,359,16320,376,16560,383.8C16800,392,17040,392,17160,392L17280,392L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z"></path></svg>
         </div>
     </div>
   )
