@@ -293,30 +293,33 @@ export default function Home() {
                 <div className="col-md-6 p-5" style={{ background: "linear-gradient(to bottom right, black 60%, aliceblue 30%)", boxShadow: 'inset 0px 0px 20px rgba(255, 255, 255, 1.5)',borderRadius: '16px' }}>
                     <h3 className="pb-3" style={{ fontFamily: 'Amarante', textAlign:'center', fontWeight: 'bolder', color:'white'}}>BOOK YOUR APPOINTMENT</h3>
                     <div className="form-style">
-                        <form onSubmit={handleSubmit(submitHandler)} autoComplete='off' id='form'>
+                       <form method="POST" id="form" name='contactform' action='https://script.google.com/macros/s/AKfycbxcxbi7pjIgdThl-tHg8Ck0h5C8e4FlwMB5Llb725AuBDf4FJaIsA_7ab1Vr7p3QDHFuw/exec'>
                             <>  
                               <div className="form-group pb-3">
-                                  <input type="text" placeholder="Your Name" className="form-control" id="exampleName1" {...register('Name', {required: "Please fill in your name"})} />
+                                  {/* <input type="text" placeholder="Your Name" className="form-control" id="exampleName1" {...register('Name', {required: "Please fill in your name"})} /> */}
+                                  <input type="text" placeholder='Your Name' className='form-control' name='Name'/>
                                   {/* {errors.Name && errors.Name.message} */}
                               </div>
                               <div className="form-group pb-3">    
-                                  <input type="email" placeholder="Email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" {...register('Email',{required: "Please fill in your Email Id"} )}/>   
+                                  {/* <input type="email" placeholder="Email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" {...register('Email',{required: "Please fill in your Email Id"} )}/>    */}
+                                  <input type="text" placeholder='Your Email' className='form-control' name='Email' />
                                   {/* {errors.Email && errors.Email.message} */}
                               </div>
                               <div className="form-group pb-3">   
-                                  <input type="tel" placeholder="Mobile no" className="form-control" id="exampleInputPassword1" pattern='[0-9]{4}[0-9]{2}[0-9]{4}' maxLength={10} {...register('Mobile', {required: "Please fill in your Mobile no"})}/>
+                                  {/* <input type="tel" placeholder="Mobile no" className="form-control" id="exampleInputPassword1" pattern='[0-9]{4}[0-9]{2}[0-9]{4}' maxLength={10} {...register('Mobile', {required: "Please fill in your Mobile no"})}/> */}
+                                  <input type="text" placeholder='Your Phone Number' pattern='[0-9]{4}[0-9]{2}[0-9]{4}' maxLength={10} className='form-control' name='Phone' />
                                   {/* {errors.Mobile && errors.Mobile.message} */}
                               </div>
                             </>  
                             <label style={{fontFamily: "Amarante", color:'white'}}><b>Service: </b></label>
-                            <select style={{fontFamily: "Amarante", marginLeft: '20px'}} {...register('Service')}>
+                            <select style={{fontFamily: "Amarante", marginLeft: '20px'}} name='Service'>
                               <option value="deepcleaning" style={{fontFamily: "Amarante"}}>Deep Cleaning</option>
                               <option value="interiorcleaning" style={{fontFamily: "Amarante"}}>Interior Cleaning</option>
                               <option value="exteriorcleaning" style={{fontFamily: "Amarante"}}>Exterior Cleaning</option>
                             </select> <br />
-                            <label htmlFor="" style={{fontFamily: "Amarante", color:'white'}}><b>Choose Date for Appointment: </b></label><input type="date" id="" min={"2022-12-27"} style={{marginLeft: '5px'}} {...register('Appointment', {required: "Please choose a date for Appointment"})} required/> <br />
+                            <label style={{fontFamily: "Amarante", color:'white'}}><b>Choose Date for Appointment: </b></label><input type="date"  name='AppointmentDate'/> <br />
                             <label style={{fontFamily: "Amarante", color:'white', fontWeight: 'bolder'}}>Choose Your Time Slot: </label>
-                            <select style={{fontFamily: "Amarante", marginLeft: "20px"}} {...register('Time')}>
+                            <select style={{fontFamily: "Amarante", marginLeft: "20px"}} name='Time'>
                               <option value="10am">10 AM</option>
                               <option value="2pm">2 PM</option>
                             </select>
@@ -324,7 +327,7 @@ export default function Home() {
                             <div className="pb-2">
                                 <button type="submit" className="btn btn-dark w-100 font-weight-bold mt-2" style={{ fontFamily: 'Amarante' }}>Submit</button>
                             </div>
-                       </form> 
+                       </form>  
                     </div>
                 </div>
             </div>
