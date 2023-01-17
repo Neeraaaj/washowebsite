@@ -341,15 +341,15 @@ export default function Home() {
           </div>  
           <div className="main" style={{color: 'white'}}>
             <div className="icon1 fb">
-              <i className="fa-brands fa-instagram" style={{color: "white"}}></i>
+              <i className="fa fa-instagram" style={{color: "white"}}></i>
               <a href="https://www.instagram.com/washo.in/?hl=en" style={{textDecoration: "none"}}><span>washo.in</span></a>
             </div>
             <div className="icon1 twt">
-              <i className="fa-brands fa-whatsapp" style={{color: "white"}}></i>
+              <i className="fa fa-whatsapp" style={{color: "white"}}></i>
               <a href="tel:+919987960512"><span style={{fontSize: "40px"}}>+91 9987960512</span></a>
             </div>
             <div className="icon1 lnk">
-              <i className="fa-solid fa-envelope" style={{color: "white"}}></i>
+              <i className="fa fa-envelope" style={{color: "white"}}></i>
               <span>inwasho@gmail.com</span>
             </div>
           </div>
