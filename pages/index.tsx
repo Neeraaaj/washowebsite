@@ -332,7 +332,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className="image-left" id='contact'>
+        <div className="image-left" id='contact' style={{overflowX: "hidden"}}>
           <div className="heading">
             <h1 style={{textAlign: "center", marginTop: "15px", fontFamily: "Amarante", fontWeight: "bolder"}}>CONTACT US AT</h1>
           </div>
