@@ -66,14 +66,17 @@ export default function Home() {
         <main className={styles.main}>
           <motion.div className="heading" initial='hidden' animate='visible' variants={{
             hidden:{
-              scale: 12,
-              opacity: 0
+              opacity: 0,
+              translateX: -700,
+              animation: 'ease-in'
             },
             visible:{
               scale: 1,
               opacity: 1,
+              translateX: 5,
+              animation: 'ease-in-out',
               transition: {
-                delay: .2
+                delay: .0
               }
             },
           }}>
