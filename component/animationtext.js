@@ -4,6 +4,3 @@
 //   document.addEventListener("visibilitychange" == "hidden")
 // }
 
-AOS.init({
-    duration: 1000
-})
