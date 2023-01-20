@@ -4,7 +4,6 @@ import Script from 'next/script'
 import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {animate, motion} from 'framer-motion'
-import AnimatedTextCharacter from "../component/animationtext";
 import {useForm} from 'react-hook-form'
 
 export default function Home() {
@@ -39,6 +38,12 @@ export default function Home() {
           <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
           <link rel="manifest" href="../favicon/site.webmanifest" />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js" integrity="sha256-hBMojZuWKocCflyaG8T19KBq9OlTlK39CTxb8AUWKhY=" crossOrigin="anonymous"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossOrigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossOrigin="anonymous"></script>
+          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         </Head>
         
         <div className="upper-container" style={{width: '60px'}} >
@@ -106,7 +111,7 @@ export default function Home() {
           <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
           </g>
         </svg>
-        <div className="section2" style={{columnGap: '10px'}}>
+        <div className="section2" style={{columnGap: '10px'}} data-aos='fade-up' data-aos-duration="900">
             <h1 style={{ fontFamily:'amarante', textAlign: 'center', color: 'black', fontSize: '5vh'}}>WHAT WE <span style={{color: 'aqua'}}>DO</span></h1>
             <br />
             <h3 style={{color: 'black', textAlign: 'center', fontFamily: 'Amarante'}}>WE PROVIDE THE MOST AFFORDABLE DOORSTEP CLEANING SERVICES</h3>
