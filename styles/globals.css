@@ -126,6 +126,17 @@ nav .menu02 li{
   opacity: 1;
 }
 
+.image-left{
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.image-left.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 #holder{
   background: white;
   padding: 10px;
