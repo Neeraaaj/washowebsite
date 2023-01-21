@@ -114,6 +114,18 @@ nav .menu02 li{
   transform: translateX(-130px);
 }
 
+.section2{
+  position: relative;
+  transform: translateY(170px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.section2.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 #holder{
   background: white;
   padding: 10px;
