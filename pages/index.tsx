@@ -111,7 +111,7 @@ export default function Home() {
           <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
           </g>
         </svg>
-        <div className="section2" style={{columnGap: '10px'}}>
+        <div className="section2" style={{columnGap: '10px'}} data-aos='fade-up' data-aos-duration='1000'>
             <h1 style={{ fontFamily:'amarante', textAlign: 'center', color: 'black', fontSize: '5vh'}}>WHAT WE <span style={{color: 'aqua'}}>DO</span></h1>
             <br />
             <h3 style={{color: 'black', textAlign: 'center', fontFamily: 'Amarante'}}>WE PROVIDE THE MOST AFFORDABLE DOORSTEP CLEANING SERVICES</h3>
