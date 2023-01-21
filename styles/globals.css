@@ -29,6 +29,9 @@ a {
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 #trigger{
   position: absolute;
