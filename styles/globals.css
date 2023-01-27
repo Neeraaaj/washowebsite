@@ -131,7 +131,16 @@ nav .menu02 li{
   opacity: 0;
   transition: 1s all ease;
 }
+.wrapper{
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.wrapper.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 .image-left.active{
   transform: translateY(0);
   opacity: 1;
