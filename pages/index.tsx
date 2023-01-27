@@ -235,56 +235,68 @@ export default function Home() {
                 </div>
                 <div className="wrapper">
                   <h3 className='card-title' style={{fontWeight: "lighter", fontSize: '45px'}}>Announcing Our Subscription Plan</h3>
-                  <span><Image src="https://cdn.pixabay.com/photo/2022/06/29/17/53/megaphone-7292261_960_720.png" alt="" width={500} height={100} style={{width: "95px", left: "6%",marginTop: "-20px",position:"absolute", zIndex: "2", overflowY: "visible"}}/></span>
+                  <span><Image src="/speaker.png" alt="" width={500} height={100} style={{width: "95px", left: "6%",marginTop: "-20px",position:"absolute", zIndex: "2", overflowY: "visible"}}/></span>
 
-                  <div className="cols">
-                    <div className="col">
-                      <div className="container">
-                        <div className="front">
-                          <div className="inner">
-                            <h2 style={{fontSize: "30px", fontFamily: "Amarante",fontWeight:'bolder'}}>Get Deep Cleaning 3 Services Per Year.</h2>
-                            <ul style={{fontSize: "12px", fontWeight: 'bold'}}>
-                              <li>Cleaning Includes Deep Interior And Exterior Windows</li>
-                              <li>Upholstery</li>
-                              <li>Engine Bay</li>
-                              <li>Interior Polishing</li>
-                              <li>Exterior Polishing</li>
-                              <li>Headlight/Taillight Enchancement + Teflon Coating (Removes Minor Scratches And Swirl Marks)</li>
-                              <b>Services Are Spread Over 4 Months Which Means You Can Book Any Time Of The Year.</b>
-                              <li>Hatchback - ₹6299/-</li>
-                              <li>Sedan/Mid Size SUV - ₹7199/-</li>
-                              <li>Large SUV/MUV is prices at - <b>*₹8599*</b></li>
-                            </ul>
-          
-                          </div>
+                  <div className="layout_announce">
+                    <div>
+                      <div className="card--neumorphic">
+                        <Image className='announce_img' src="/washo3.png" width={850} height={150} alt='' style={{width: "100%", height: "15%"}}/>
+                        <div>
+                          <h5 style={{fontFamily: "Amarante", fontSize: "18px", fontWeight: "bolder"}}>GET DEEP CLEANING 3 SERVICES PER YEAR</h5>
+                          <ul style={{fontFamily: 'Amarante', fontWeight: "bold"}}>
+                            <li>Cleaning includes Deep Interior and Exterior</li>
+                            <li>Windows</li>
+                            <li>Upholstery</li>
+                            <li>Engine Bay</li>
+                            <li>Interior Polishing</li>
+                            <li>Exterior Polishing</li>
+                            <li>Headlight/Taillight Enhancement + Teflon Coating (Removes Minor Scratches and Swirl Marks)</li>
+                          </ul>
+                          <strong>Prices: </strong>
+                          <ul>
+                            <li>Hatchback - ₹6299/-</li>
+                            <li>Sedan/Mid Size SUV - ₹7199/-</li>
+                            <li>Large SUV/MUV - *₹8599*</li>
+                          </ul>
                         </div>
-                        <div className="back">
-                          <div className="inner">
-                            <h2 style={{fontSize: "26px", fontFamily: "Amarante", fontWeight: 'bolder'}}>Get 12 Premium Services Per Year</h2>
-                            <ul style={{fontSize: "11px",fontWeight: 'bolder'}}>
-                              <li>Full Interior Cleaning</li>
-                              <li>Full Exterior Cleaning</li>
-                              <li>Exterior Foam Wash</li>
-                              <li>Exterior Pressure Wash</li>
-                              <li>Exterior Wax Polish</li>
-                              <li>Scratch Removal Process (Every 3 Month)</li>
-                              <li>Interior Polishing</li>
-                              <li>Tyre Dressing</li>
-                              <li>Matt Cleaning</li>
-                              <li>Interior Vacuuming</li>
-                              <li>Engine Bay Cleaning</li>
-                              <li>Roof Cleaning (Every 3 Month)</li>
-                              <li>Deep A/C Vent Foam Cleaning(Every 3 Month)</li>
-                              <b>These Are The Services You Will Get In Our Yearly Plan</b>
-                              <li><b>Hatchback - ₹13999</b></li>
-                              <li><b>Sedan/Mid Size SUV - ₹15999</b></li>
-                              <li><b>Large SUV/MUV - ₹18999</b></li>
-                            </ul>
-                          </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="card--neumorphic">
+                        <Image className='announce_img' src="/washo4.png" width={550} height={150} alt='' style={{width: "100%", height: "15%"}}/>
+                        <div>
+                          <h5 style={{fontFamily: 'Amarante', fontWeight: 'bold'}}>Yearly Subcription Plan Premium Service - 12 Services Per Year</h5>
+                          <ul style={{fontWeight: "bolder", fontFamily: 'Amarante'}}>
+                            <li>Full Interior Cleaning</li>
+                            <li>Full Exterior Cleaning</li>
+                            <li>Exterior Foam Wash</li>
+                            <li>Exterior Pressure Wash</li>
+                            <li>Exterior Wax Polish</li>
+                            <li>Sratch Removal Process (Every 3 month )</li>
+                            <li>Interior Polishing</li>
+                            <li>Tyre Dressing</li>
+                            <li>Matt Cleaning</li>
+                            <li>Interior Vacuuming</li>
+                            <li>Engine Bay Cleaning</li>
+                            <li>Roof Cleaning (Every 3 month )</li>
+                            <li>Deep A/C Vent Foam Cleaning (Every 3 month )</li>
+                            <li>Underbody Cleaning</li>
+                            <li>Headlight/Taillight Enhancement (Every 3 month )</li>
+                          </ul>
+                          <strong>Prices: </strong>
+                          <ul>
+                            <li>Hatchback - ₹13999</li>
+                            <li>Sedan/Mid Size SUV - ₹15999</li>
+                            <li>Large SUV/MUV - ₹18999</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className="alert alert-info alert-dismissible fade show ml-2 mr-0 mx-auto">  
+                  <button type="button" className="close" data-dismiss="alert">×</button>  
+                  <strong>Note!</strong> Services are spread over 4 months which means you can book any time of the year.  
                 </div>
                 
               </div>
