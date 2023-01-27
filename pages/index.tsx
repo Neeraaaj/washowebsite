@@ -305,13 +305,15 @@ export default function Home() {
         </div>
         <br />
         
-        <div className="container-form" style={{marginTop: '260px'}}>
+        <div className="container-form" style={{marginTop: '50px', boxShadow: "5px 5px 15px 4px grey", background: "white"}}>
             <div className="row m-5 no-gutters shadow-lg" style={{ boxShadow: '45px' }}>
-                <div className="col-md-6 d-none d-md-block" style={{ background: "black" }}>
-                  <iframe src='https://my.spline.design/krillincopy-f495517d7cf230640adab8067817ca8b/' width='100%' height='100%' style={{boxShadow: '5px 5px 6px gray'}}></iframe>
+                <div className="col-md-6 d-none d-md-block" style={{ background: "radial-gradient(circle at 4.3% 10.9%, rgb(18, 118, 249) 13.6%, rgb(75, 252, 235) 100.7%)" }}>
+                  <h1 style={{fontFamily:'Amarante', fontSize: "450%", textAlign: "center", color: "white", fontWeight: "bolder"}}>WASHO</h1>
+                  <h4 style={{fontFamily: "creepster, cursive", textAlign: "center", color: "whitesmoke"}}>MORE SERVICES COMMING SOON</h4>
+                  <Image src="/washo1_removebg.png" alt='' width={430} height={440} style={{width: "630", height: "540",  marginTop: "10px", imageResolution: "from-image", textAlign: "center"}}></Image>
                 </div>
-                <div className="col-md-6 p-5" style={{ background: "linear-gradient(to bottom right, black 60%, aliceblue 30%)", boxShadow: 'inset 0px 0px 20px rgba(255, 255, 255, 1.5)',borderRadius: '16px' }}>
-                    <h3 className="pb-3" style={{ fontFamily: 'Amarante', textAlign:'center', fontWeight: 'bolder', color:'white'}}>BOOK YOUR APPOINTMENT</h3>
+                <div className="col-md-6 p-5" style={{ borderRadius: '5px' }}>
+                    <h3 className="pb-3" style={{ fontFamily: 'Amarante', textAlign:'center', fontWeight: 'bolder', color:'black'}}>BOOK YOUR APPOINTMENT</h3>
                     <div className="form-style">
                        <form method="POST" id="form" name='contactform' action='https://script.google.com/macros/s/AKfycbxcxbi7pjIgdThl-tHg8Ck0h5C8e4FlwMB5Llb725AuBDf4FJaIsA_7ab1Vr7p3QDHFuw/exec'>
                             <>  
@@ -357,20 +359,20 @@ export default function Home() {
             <h1 style={{textAlign: "center", marginTop: "15px", fontFamily: "Amarante", fontWeight: "bolder"}}>CONTACT US AT</h1>
           </div>
           <div className="contac_image" style={{marginLeft: "15px", boxShadow: "10px 14px 10px 10px grey"}}>
-            <Image className="col-lg-0 ml-lg-5" src="https://img.freepik.com/free-vector/organic-flat-customer-support-illustration_23-2148899134.jpg?w=740&t=st=1673180361~exp=1673180961~hmac=ccba984fabdcc7fc179fb85d3b231dd888e5aeb5596d3aaa0d1cffc7f6d947c0" alt="" style={{width: "45%"}} width={500} height={500} id="contact" />
+            <Image className="col-lg-0 ml-lg-5" src="/5124556.jpg" alt="" style={{width: "39%"}} width={500} height={500} id="contact" />
           </div>  
           <div className="main" style={{color: 'white'}}>
-            <div className="icon1 fb">
+            <div className="icon1 fb" style={{background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)"}}>
               <i className="fa fa-instagram" style={{color: "white"}}></i>
               <a href="https://www.instagram.com/washo.in/?hl=en" style={{textDecoration: "none"}}><span>washo.in</span></a>
             </div>
-            <div className="icon1 twt">
+            <div className="icon1 twt" style={{background: "green"}}>
               <i className="fa fa-whatsapp" style={{color: "white"}}></i>
-              <a href="tel:+919987960512"><span style={{fontSize: "40px"}}>+91 9987960512</span></a>
+              <a href="https://api.whatsapp.com/send?phone=+91 9987960512"><span style={{fontSize: "40px"}}>+91 9987960512</span></a>
             </div>
-            <div className="icon1 lnk">
-              <i className="fa fa-envelope" style={{color: "white"}}></i>
-              <span>inwasho@gmail.com</span>
+            <div className="icon1 lnk" style={{background: "white"}}>
+              <Image src="/gmail-icon.svg" width={60} height={60} alt=''></Image>
+              <a href="mailto:inwasho@gmail.com"><span style={{color: "black"}}>inwasho@gmail.com</span></a>
             </div>
           </div>
         </div>
