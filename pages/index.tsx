@@ -266,7 +266,7 @@ export default function Home() {
                         <Image className='announce_img' src="/washo4.png" width={550} height={150} alt='' style={{width: "100%", height: "15%"}}/>
                         <div>
                           <h5 style={{fontFamily: 'Amarante', fontWeight: 'bold'}}>Yearly Subcription Plan Premium Service - 12 Services Per Year</h5>
-                          <ul style={{fontWeight: "bolder", fontFamily: 'Amarante', color: "blac"}}>
+                          <ul style={{fontWeight: "bolder", fontFamily: 'Amarante', color: "black"}}>
                             <li>Full Interior Cleaning</li>
                             <li>Full Exterior Cleaning</li>
                             <li>Exterior Foam Wash</li>
