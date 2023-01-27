@@ -319,17 +319,17 @@ export default function Home() {
                             <>  
                               <div className="form-group pb-3">
                                   {/* <input type="text" placeholder="Your Name" className="form-control" id="exampleName1" {...register('Name', {required: "Please fill in your name"})} /> */}
-                                  <input type="text" placeholder='Your Name' className='form-control' name='Name'/>
+                                  <input type="text" placeholder='Your Name' className='form-control' name='Name' required/>
                                   {/* {errors.Name && errors.Name.message} */}
                               </div>
                               <div className="form-group pb-3">    
                                   {/* <input type="email" placeholder="Email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" {...register('Email',{required: "Please fill in your Email Id"} )}/>    */}
-                                  <input type="text" placeholder='Your Email' className='form-control' name='Email' />
+                                  <input type="text" placeholder='Your Email' className='form-control' name='Email' required/>
                                   {/* {errors.Email && errors.Email.message} */}
                               </div>
                               <div className="form-group pb-3">   
                                   {/* <input type="tel" placeholder="Mobile no" className="form-control" id="exampleInputPassword1" pattern='[0-9]{4}[0-9]{2}[0-9]{4}' maxLength={10} {...register('Mobile', {required: "Please fill in your Mobile no"})}/> */}
-                                  <input type="text" placeholder='Your Phone Number' pattern='[0-9]{4}[0-9]{2}[0-9]{4}' maxLength={10} className='form-control' name='Phone' />
+                                  <input type="text" placeholder='Your Phone Number' pattern='[0-9]{4}[0-9]{2}[0-9]{4}' maxLength={10} className='form-control' name='Phone' required />
                                   {/* {errors.Mobile && errors.Mobile.message} */}
                               </div>
                             </>  
