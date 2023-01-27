@@ -315,7 +315,7 @@ export default function Home() {
                 <div className="col-md-6 p-5" style={{ borderRadius: '5px' }}>
                     <h3 className="pb-3" style={{ fontFamily: 'Amarante', textAlign:'center', fontWeight: 'bolder', color:'black'}}>BOOK YOUR APPOINTMENT</h3>
                     <div className="form-style">
-                       <form method="POST" id="form" name='contactform' action='https://script.google.com/macros/s/AKfycbxcxbi7pjIgdThl-tHg8Ck0h5C8e4FlwMB5Llb725AuBDf4FJaIsA_7ab1Vr7p3QDHFuw/exec'>
+                       <form method="POST" id="form" name='contactform'>
                             <>  
                               <div className="form-group pb-3">
                                   {/* <input type="text" placeholder="Your Name" className="form-control" id="exampleName1" {...register('Name', {required: "Please fill in your name"})} /> */}
