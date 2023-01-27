@@ -5,7 +5,7 @@ if(typeof window !== 'undefined'){
     form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(response => alert("Thank you! Your appointment has been booked successfully as per your respective Time and Date.\n we will reach out to you soon. :)" ))
             .then(() => {  window.location.reload(); })
             .catch(error => console.error('Error!', error.message))
     })
