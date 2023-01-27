@@ -333,14 +333,14 @@ export default function Home() {
                                   {/* {errors.Mobile && errors.Mobile.message} */}
                               </div>
                             </>  
-                            <label style={{fontFamily: "Amarante", color:'white'}}><b>Service: </b></label>
+                            <label style={{fontFamily: "Amarante", color:'black'}}><b>Service: </b></label>
                             <select style={{fontFamily: "Amarante", marginLeft: '20px'}} name='Service'>
                               <option value="deepcleaning" style={{fontFamily: "Amarante"}}>Deep Cleaning</option>
                               <option value="interiorcleaning" style={{fontFamily: "Amarante"}}>Interior Cleaning</option>
                               <option value="exteriorcleaning" style={{fontFamily: "Amarante"}}>Exterior Cleaning</option>
                             </select> <br />
-                            <label style={{fontFamily: "Amarante", color:'white'}}><b>Choose Date for Appointment: </b></label><input type="date"  name='AppointmentDate'/> <br />
-                            <label style={{fontFamily: "Amarante", color:'white', fontWeight: 'bolder'}}>Choose Your Time Slot: </label>
+                            <label style={{fontFamily: "Amarante", color:'black'}}><b>Choose Date for Appointment: </b></label><input type="date"  name='AppointmentDate'/> <br />
+                            <label style={{fontFamily: "Amarante", color:'black', fontWeight: 'bolder'}}>Choose Your Time Slot: </label>
                             <select style={{fontFamily: "Amarante", marginLeft: "20px"}} name='Time'>
                               <option value="10am">10 AM</option>
                               <option value="2pm">2 PM</option>
