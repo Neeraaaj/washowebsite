@@ -243,7 +243,7 @@ export default function Home() {
                         <Image className='announce_img' src="/washo3.png" width={850} height={150} alt='' style={{width: "100%", height: "15%"}}/>
                         <div>
                           <h5 style={{fontFamily: "Amarante", fontSize: "18px", fontWeight: "bolder"}}>GET DEEP CLEANING 3 SERVICES PER YEAR</h5>
-                          <ul style={{fontFamily: 'Amarante', fontWeight: "bold"}}>
+                          <ul style={{fontFamily: 'Amarante', fontWeight: "bold", color: "black"}}>
                             <li>Cleaning includes Deep Interior and Exterior</li>
                             <li>Windows</li>
                             <li>Upholstery</li>
@@ -253,7 +253,7 @@ export default function Home() {
                             <li>Headlight/Taillight Enhancement + Teflon Coating (Removes Minor Scratches and Swirl Marks)</li>
                           </ul>
                           <strong>Prices: </strong>
-                          <ul>
+                          <ul style={{color: "black"}}>
                             <li>Hatchback - ₹6299/-</li>
                             <li>Sedan/Mid Size SUV - ₹7199/-</li>
                             <li>Large SUV/MUV - *₹8599*</li>
@@ -266,7 +266,7 @@ export default function Home() {
                         <Image className='announce_img' src="/washo4.png" width={550} height={150} alt='' style={{width: "100%", height: "15%"}}/>
                         <div>
                           <h5 style={{fontFamily: 'Amarante', fontWeight: 'bold'}}>Yearly Subcription Plan Premium Service - 12 Services Per Year</h5>
-                          <ul style={{fontWeight: "bolder", fontFamily: 'Amarante'}}>
+                          <ul style={{fontWeight: "bolder", fontFamily: 'Amarante', color: "blac"}}>
                             <li>Full Interior Cleaning</li>
                             <li>Full Exterior Cleaning</li>
                             <li>Exterior Foam Wash</li>
@@ -284,7 +284,7 @@ export default function Home() {
                             <li>Headlight/Taillight Enhancement (Every 3 month )</li>
                           </ul>
                           <strong>Prices: </strong>
-                          <ul>
+                          <ul style={{color: "black" }}>
                             <li>Hatchback - ₹13999</li>
                             <li>Sedan/Mid Size SUV - ₹15999</li>
                             <li>Large SUV/MUV - ₹18999</li>
