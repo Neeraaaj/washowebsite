@@ -127,7 +127,7 @@ export default function Home() {
                       </a>
                     </div>
                     <div className="img-icon-box-content">
-                      <h1 className="title" style={{fontSize: '55px', fontFamily: 'Amarante', color: 'white', fontWeight:'bolder'}}>DEEP CLEANING</h1>
+                      <h1 className="title" style={{fontSize: '5vw', fontFamily: 'Amarante', color: 'white', fontWeight:'bolder'}}>DEEP CLEANING</h1>
                         <div className="card-desc" style={{color: 'white'}}>
                           <ul>
                             <li>-FULL INTERIOR CLEANING</li>
@@ -148,6 +148,12 @@ export default function Home() {
                             <li>-DEEP ENGINE BAY CLEANING</li>
                             <li>-EXTERIOR TEFLON COATING (REMOVES SWIRL MARKS & MINOR SCRATCHES )</li>
                             <li>-MIRROR & HYDROPHOBIC FINISHING ( ENHANCES CAR PAINT )</li>
+                          </ul>
+                          <strong>Prices: </strong>
+                          <ul>
+                            <li>Hactchback - ₹2599</li>
+                            <li>Sedan/Mid Size SUV - ₹2999</li>
+                            <li>Large SUV/MUV - ₹3599</li>
                           </ul>
                         </div>
                         <a href="#form">
@@ -171,7 +177,7 @@ export default function Home() {
                       </a>
                     </div>
                     <div className="img-icon-box-content">
-                      <h1 className="title" style={{fontSize: '55px', fontFamily: 'Amarante', color:'white', fontWeight: 'bolder'}}>INTERIOR CLEANING</h1>
+                      <h1 className="title" style={{fontSize: '5vw', fontFamily: 'Amarante', color:'white', fontWeight: 'bolder'}}>INTERIOR CLEANING</h1>
                         <div className="card-desc" style={{color: 'white'}}>
                           <ul>
                             <li>-FULL INTERIOR CLEANING</li>
@@ -183,6 +189,12 @@ export default function Home() {
                             <li>-DEEP AC VENT FOAM CLEANING</li>
                             <li>-SEATBELT'S CLEANING</li>
                             <li>-INTERIOR POLISHING</li>
+                          </ul>
+                          <strong>Prices: </strong>
+                          <ul>
+                            <li>Hactchback - ₹1299</li>
+                            <li>Sedan/Mid Size SUV - ₹1599</li>
+                            <li>Large SUV/MUV - ₹1899</li>
                           </ul>
                         </div>
                         <a href="#form">
@@ -206,7 +218,7 @@ export default function Home() {
                       </a>
                     </div>
                     <div className="img-icon-box-content">
-                      <h1 className="title" style={{fontSize: '55px', fontFamily: 'Amarante', color:'white', fontWeight: 'bolder'}}>EXTERIOR CLEANING</h1>
+                      <h1 className="title" style={{fontSize: '5vw', fontFamily: 'Amarante', color:'white', fontWeight: 'bolder'}}>EXTERIOR CLEANING</h1>
                         <div className="card-desc" style={{color: 'white'}}>
                           <ul>
                             <li>-INTERIOR VACUUMING</li>
@@ -219,6 +231,12 @@ export default function Home() {
                             <li>-DEEP ENGINE BAY CLEANING</li>
                             <li>-EXTERIOR TEFLON COATING (REMOVES SWIRL MARKS & MINOR SCRATCHES )</li>
                             <li>-MIRROR & HYDROPHOBIC FINISHING ( ENHANCES CAR PAINT )</li>
+                          </ul>
+                          <strong>Prices: </strong>
+                          <ul>
+                            <li>Hactchback - ₹1299</li>
+                            <li>Sedan/Mid Size SUV - ₹1599</li>
+                            <li>Large SUV/MUV - ₹1899</li>
                           </ul>
                         </div>
                         <a href="#form">
