@@ -151,7 +151,7 @@ export default function Home() {
                           </ul>
                           <strong>Prices: </strong>
                           <ul>
-                            <li>Hactchback - ₹2599</li>
+                            <li>Hatchback - ₹2599</li>
                             <li>Sedan/Mid Size SUV - ₹2999</li>
                             <li>Large SUV/MUV - ₹3599</li>
                           </ul>
@@ -192,7 +192,7 @@ export default function Home() {
                           </ul>
                           <strong>Prices: </strong>
                           <ul>
-                            <li>Hactchback - ₹1299</li>
+                            <li>Hatchback - ₹1299</li>
                             <li>Sedan/Mid Size SUV - ₹1599</li>
                             <li>Large SUV/MUV - ₹1899</li>
                           </ul>
@@ -234,7 +234,7 @@ export default function Home() {
                           </ul>
                           <strong>Prices: </strong>
                           <ul>
-                            <li>Hactchback - ₹1299</li>
+                            <li>Hatchback - ₹1299</li>
                             <li>Sedan/Mid Size SUV - ₹1599</li>
                             <li>Large SUV/MUV - ₹1899</li>
                           </ul>
